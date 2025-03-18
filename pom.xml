@@ -3,23 +3,33 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.CookieDoesPvP</groupId>  <!-- Your GitHub username -->
-    <artifactId>EscapeMC-SQL</artifactId>  <!-- Your repo name -->
-    <version>1.0.0</version>  <!-- Match the release tag -->
+    <groupId>com.github.CookieDoesPvP</groupId> <!-- Your GitHub username -->
+    <artifactId>escape-mc-sql</artifactId> <!-- Your repo name -->
+    <version>1.0.0</version> <!-- Match the release tag -->
     <packaging>jar</packaging>
 
-    <repositories>
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-    </repositories>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.github.CookieDoesPvP</groupId>
-            <artifactId>EscapeMC-SQL</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-install-plugin</artifactId>
+                <version>2.5.2</version>
+                <executions>
+                    <execution>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                        <configuration>
+                            <file>${project.basedir}/libs/EscapeMC-SQL.jar</file>
+                            <groupId>com.github.CookieDoesPvP</groupId>
+                            <artifactId>escape-mc-sql</artifactId>
+                            <version>1.0.0</version>
+                            <packaging>jar</packaging>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
