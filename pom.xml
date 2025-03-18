@@ -5,7 +5,7 @@
 
     <groupId>com.github.CookieDoesPvP</groupId> <!-- Your GitHub username -->
     <artifactId>escape-mc-sql</artifactId> <!-- Your repo name -->
-    <version>1.0.0</version> <!-- Match the release tag -->
+    <version>Prod</version> <!-- Match the release tag -->
     <packaging>jar</packaging>
 
     <build>
@@ -24,7 +24,7 @@
                             <file>${project.basedir}/libs/EscapeMC-SQL.jar</file>
                             <groupId>com.github.CookieDoesPvP</groupId>
                             <artifactId>escape-mc-sql</artifactId>
-                            <version>1.0.0</version>
+                            <version>Prod</version>
                             <packaging>jar</packaging>
                         </configuration>
                     </execution>
