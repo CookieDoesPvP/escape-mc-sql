@@ -1,0 +1,9 @@
+name: EscapeMC-SQL
+version: 1.0.0
+author: Gake
+main: com.escapemc.mysql.Register
+depend: []
+libraries:
+  - com.zaxxer:HikariCP:5.0.1
+commands:
+ mysql:
