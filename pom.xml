@@ -5,7 +5,7 @@
 
     <groupId>com.github.CookieDoesPvP</groupId>
     <artifactId>escape-mc-sql</artifactId>
-    <version>1.0.0</version> <!-- Match GitHub release version -->
+    <version>Dprod</version> <!-- Match GitHub release version -->
     <packaging>jar</packaging>
 
     <distributionManagement>
